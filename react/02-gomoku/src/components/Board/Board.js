@@ -6,6 +6,7 @@ export default function Board({squares, onHandleClick}) {
     function renderSquare(i) {
         return <Square value={squares[i]} onClick={() => onHandleClick(i)} key={i}/>;
     }
+
     const rows = 19;
     const cells = 19;
 

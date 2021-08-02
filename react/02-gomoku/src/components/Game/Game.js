@@ -13,7 +13,6 @@ export default function Game() {
     const current = moves[stepNumber];
 
 
-
     const winner = calculateWinner(current.squares);
     let status;
 
@@ -31,7 +30,7 @@ export default function Game() {
         const col = 1 + step.latestMove % 19;
 
         const desc = move ?
-            "Move "+move +`(Row: ${row}  Col: ${col})` :
+            "Move " + move + `(Row: ${row}  Col: ${col})` :
             'Restart';
         return (
             <li key={move}>
@@ -60,6 +59,7 @@ export default function Game() {
     function jumpTo(step) {
         setStepNumber(step);
     }
+
     function calculateWinner(squares) {
 
         let currentMove = moves[moves.length - 1].latestMove;
@@ -110,7 +110,7 @@ export default function Game() {
 
                 counter = counter + 1;
                 if (counter === 5) {
-                    squares[currentMove]='🟡';
+                    squares[currentMove] = '🟡';
                     return {
                         winner: squares[currentMove],
                         draw: false
@@ -129,7 +129,7 @@ export default function Game() {
 
                 counter = counter + 1;
                 if (counter === 5) {
-                    squares[currentMove]='🟡';
+                    squares[currentMove] = '🟡';
                     return {
                         winner: squares[currentMove],
                         draw: false
@@ -148,7 +148,7 @@ export default function Game() {
 
                 counter = counter + 1;
                 if (counter === 5) {
-                    squares[currentMove]='🟡';
+                    squares[currentMove] = '🟡';
                     return {
                         winner: squares[currentMove],
                         draw: false
@@ -167,7 +167,7 @@ export default function Game() {
 
                 counter = counter + 1;
                 if (counter === 5) {
-                    squares[currentMove]='🟡';
+                    squares[currentMove] = '🟡';
                     return {
                         winner: squares[currentMove],
                         draw: false
@@ -186,7 +186,7 @@ export default function Game() {
 
                 counter = counter + 1;
                 if (counter === 5) {
-                    squares[currentMove]='🟡';
+                    squares[currentMove] = '🟡';
                     return {
                         winner: squares[currentMove],
                         draw: false
