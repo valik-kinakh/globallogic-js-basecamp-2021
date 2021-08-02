@@ -1,7 +1,7 @@
 .game {
-    /*display: flex;*/
+    display: flex;
     flex-direction: row;
-    width: 630px;
+    width: 850px;
    background-color: #ff9471;
     border-radius: 0 20px 20px 0;
 }
