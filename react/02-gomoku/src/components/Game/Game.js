@@ -236,7 +236,7 @@ export default function Game() {
             </div>
             <div className="game-info">
                 <div>{status}</div>
-                <button onClick={() => setIsStraight(!isStraight)} className={'toggle'}>
+                <button onClick={() => setIsStraight(!isStraight)} className={'buttons'}>
                     {isStraight ? 'Straight' : 'Reverse'}
                 </button>
                 <ol>{steps}</ol>
