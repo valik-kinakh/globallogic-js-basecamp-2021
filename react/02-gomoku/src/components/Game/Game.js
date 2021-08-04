@@ -75,7 +75,7 @@ export default function Game() {
             if (squares[i] === squares[currentMove] && typeof squares[currentMove] !== 'undefined' && typeof squares[i] !== 'undefined') {
                 counterHorizontal++;
 
-                if (counterHorizontal === 5) {
+                if (counterHorizontal >= 5) {
                     return {
                         winner: squares[currentMove],
                         draw: false
@@ -91,7 +91,7 @@ export default function Game() {
             if (iterations > 4) break;
             if (squares[i] === squares[currentMove] && typeof squares[currentMove] !== 'undefined' && typeof squares[i] !== 'undefined') {
                 counterHorizontal++;
-                if (counterHorizontal === 5) {
+                if (counterHorizontal >= 5) {
                     return {
                         winner: squares[currentMove],
                         draw: false
@@ -109,7 +109,7 @@ export default function Game() {
             if (squares[i] === squares[currentMove] && typeof squares[currentMove] !== 'undefined' && typeof squares[i] !== 'undefined') {
 
                 counter = counter + 1;
-                if (counter === 5) {
+                if (counter >= 5) {
                     squares[currentMove] = '🟡';
                     return {
                         winner: squares[currentMove],
@@ -128,7 +128,7 @@ export default function Game() {
             if (squares[i] === squares[currentMove] && typeof squares[currentMove] !== 'undefined' && typeof squares[i] !== 'undefined') {
 
                 counter = counter + 1;
-                if (counter === 5) {
+                if (counter >= 5) {
                     squares[currentMove] = '🟡';
                     return {
                         winner: squares[currentMove],
@@ -147,7 +147,7 @@ export default function Game() {
             if (squares[i] === squares[currentMove] && typeof squares[currentMove] !== 'undefined' && typeof squares[i] !== 'undefined') {
 
                 counter = counter + 1;
-                if (counter === 5) {
+                if (counter >= 5) {
                     squares[currentMove] = '🟡';
                     return {
                         winner: squares[currentMove],
@@ -166,7 +166,7 @@ export default function Game() {
             if (squares[i] === squares[currentMove] && typeof squares[currentMove] !== 'undefined' && typeof squares[i] !== 'undefined') {
 
                 counter = counter + 1;
-                if (counter === 5) {
+                if (counter >= 5) {
                     squares[currentMove] = '🟡';
                     return {
                         winner: squares[currentMove],
@@ -185,7 +185,7 @@ export default function Game() {
             if (squares[i] === squares[currentMove] && typeof squares[currentMove] !== 'undefined' && typeof squares[i] !== 'undefined') {
 
                 counter = counter + 1;
-                if (counter === 5) {
+                if (counter >= 5) {
                     squares[currentMove] = '🟡';
                     return {
                         winner: squares[currentMove],
@@ -204,7 +204,7 @@ export default function Game() {
             if (squares[i] === squares[currentMove] && typeof squares[currentMove] !== 'undefined' && typeof squares[i] !== 'undefined') {
 
                 counter = counter + 1;
-                if (counter === 5) {
+                if (counter >= 5) {
                     return {
                         winner: squares[currentMove],
                         draw: false

@@ -1,13 +1,19 @@
 .game {
     display: flex;
     flex-direction: row;
-    min-width: 760px;
     background-color: #ff9471;
-    border-radius: 0 20px 20px 0;
+    border-radius: 20px;
 }
 
 .game-info {
-    margin-left: 20px;
+    margin:0 20px;
+    min-width: 250px;
+}
+.game-board
+{
+    min-width: 760px;
+    display: flex;
+    justify-content: center;
 }
 
 .move-list-item-selected {
