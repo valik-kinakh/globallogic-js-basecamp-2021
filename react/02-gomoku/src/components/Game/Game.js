@@ -76,6 +76,7 @@ export default function Game() {
                 counterHorizontal++;
 
                 if (counterHorizontal >= 5) {
+                    squares[currentMove] = '🟡';
                     return {
                         winner: squares[currentMove],
                         draw: false
@@ -92,6 +93,7 @@ export default function Game() {
             if (squares[i] === squares[currentMove] && typeof squares[currentMove] !== 'undefined' && typeof squares[i] !== 'undefined') {
                 counterHorizontal++;
                 if (counterHorizontal >= 5) {
+                    squares[currentMove] = '🟡';
                     return {
                         winner: squares[currentMove],
                         draw: false
@@ -205,6 +207,7 @@ export default function Game() {
 
                 counter = counter + 1;
                 if (counter >= 5) {
+                    squares[currentMove] = '🟡';
                     return {
                         winner: squares[currentMove],
                         draw: false

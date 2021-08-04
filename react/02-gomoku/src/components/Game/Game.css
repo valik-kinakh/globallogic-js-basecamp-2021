@@ -6,11 +6,11 @@
 }
 
 .game-info {
-    margin:0 20px;
+    margin: 0 20px;
     min-width: 250px;
 }
-.game-board
-{
+
+.game-board {
     min-width: 760px;
     display: flex;
     justify-content: center;
