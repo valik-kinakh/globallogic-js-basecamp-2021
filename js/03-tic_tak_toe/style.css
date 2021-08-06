@@ -1,0 +1,40 @@
+#content {
+    position: relative;
+}
+
+#wrapper {
+    width: 310px;
+    height: 310px;
+    display: inline-block;
+    position: absolute;
+    top: 100px;
+    left: 170px;
+}
+
+#header {
+
+    position: absolute;
+    margin-left: 15%;
+}
+
+.cell {
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 26px;
+    vertical-align: middle;
+    horiz-align: center;
+}
+
+#dagger {
+    position: absolute;
+    top: 100px;
+}
+
+#zero {
+    position: absolute;
+    top: 200px;
+}
