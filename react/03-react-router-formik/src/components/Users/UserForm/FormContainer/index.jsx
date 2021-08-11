@@ -12,21 +12,21 @@ function FormContainer({ initialValues, onSubmit, mode, roles, required }) {
     <Formik initialValues={initialValues} onSubmit={onSubmit}>
       <Form>
         <div className='form'>
-          <Input name={USERNAME} label='Username' disabled={mode === MODE.VIEW} required={required}
+          <Input name={USERNAME} label='Username' disabled={mode === MODE.VIEW || mode === MODE.DELETE} required={required}
                  validate={value => {
                    if (value.trim() === '') {
                      return `Please, enter your name:)`;
                    }
                  }}
           />
-          <Input name={AGE} label='Age' disabled={mode === MODE.VIEW} type='number' required={required}
+          <Input name={AGE} label='Age' disabled={mode === MODE.VIEW || mode === MODE.DELETE} type='number' required={required}
                  validate={value => {
                    if (value <= 15 || value >= 111) {
                      return `Not allowed age!`;
                    }
                  }}
           />
-          <Select name={ROLE} label='Role' disabled={mode === MODE.VIEW} value={roles}
+          <Select name={ROLE} label='Role' disabled={mode === MODE.VIEW || mode === MODE.DELETE} value={roles}
                   validate={value => {
                     if (!value) {
                       return `Field is required`;
