@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/globallogic-js-basecamp-2021/react/03-react-router-formik/build/static/css/main.5bf9f3a4.chunk.css",
+    "main.js": "/globallogic-js-basecamp-2021/react/03-react-router-formik/build/static/js/main.8c7de82d.chunk.js",
+    "main.js.map": "/globallogic-js-basecamp-2021/react/03-react-router-formik/build/static/js/main.8c7de82d.chunk.js.map",
+    "runtime-main.js": "/globallogic-js-basecamp-2021/react/03-react-router-formik/build/static/js/runtime-main.3c613b3c.js",
+    "runtime-main.js.map": "/globallogic-js-basecamp-2021/react/03-react-router-formik/build/static/js/runtime-main.3c613b3c.js.map",
+    "static/js/2.c29c73ba.chunk.js": "/globallogic-js-basecamp-2021/react/03-react-router-formik/build/static/js/2.c29c73ba.chunk.js",
+    "static/js/2.c29c73ba.chunk.js.map": "/globallogic-js-basecamp-2021/react/03-react-router-formik/build/static/js/2.c29c73ba.chunk.js.map",
+    "index.html": "/globallogic-js-basecamp-2021/react/03-react-router-formik/build/index.html",
+    "static/css/main.5bf9f3a4.chunk.css.map": "/globallogic-js-basecamp-2021/react/03-react-router-formik/build/static/css/main.5bf9f3a4.chunk.css.map",
+    "static/js/2.c29c73ba.chunk.js.LICENSE.txt": "/globallogic-js-basecamp-2021/react/03-react-router-formik/build/static/js/2.c29c73ba.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3c613b3c.js",
+    "static/js/2.c29c73ba.chunk.js",
+    "static/css/main.5bf9f3a4.chunk.css",
+    "static/js/main.8c7de82d.chunk.js"
+  ]
+}

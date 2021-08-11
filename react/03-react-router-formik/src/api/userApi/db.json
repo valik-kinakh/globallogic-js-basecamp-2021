@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "username": "yaroslav",
+    "role": "admin",
+    "timestamp": "2021-8-Wednesday 21:28",
+    "age": 25
+  },
+  {
+    "id": 2,
+    "username": "test-user",
+    "role": "user",
+    "timestamp": "2021-8-Tuesday 21:28",
+    "age": 17
+  }
+]

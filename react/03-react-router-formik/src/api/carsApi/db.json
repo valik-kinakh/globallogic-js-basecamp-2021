@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "name": "Ferrari",
+    "model": "Portofino",
+    "timestamp": "2021-8-Monday 21:08",
+    "gearbox": "manual"
+  },
+  {
+    "id": 2,
+    "name": "Lamborghini",
+    "model": "Aventador",
+    "timestamp": "2021-8-Wednesday 21:30",
+    "gearbox": "auto"
+  }
+]
