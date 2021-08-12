@@ -1,0 +1,21 @@
+{
+  "name": "gl_nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tutorial-3/static/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node tutorial-1/main.js"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "keywords": [
+    "NodeJs"
+  ],
+  "author": "Valik",
+  "license": "ISC",
+  "devDependencies": {
+    "dotenv": "^10.0.0"
+  }
+}
