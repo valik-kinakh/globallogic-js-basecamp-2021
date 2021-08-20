@@ -9,7 +9,7 @@ const testObj = {
 
 http.createServer((req, res) => {
   res.statusCode = 200;
-  let contentType = 'json';
+  const contentType = 'json';
 
   if (res.statusCode === 200) {
     switch (contentType) {
