@@ -1,7 +1,6 @@
-const fibonacci=require('./fibo')
+const fibonacci = require('./fibo');
 
-function callback()
-{
+function callback() {
   console.log('Next loop iteration');
 }
 
@@ -12,10 +11,11 @@ function microTasks() {
 
   new Promise((resolve) => {
     resolve('simple promise fulfilled');
-  }).then(result=>console.log(result));
+  }).then(result => console.log(result));
 
   process.nextTick(callback);
 
   console.log('Micro tasks end...');
 }
+
 microTasks();

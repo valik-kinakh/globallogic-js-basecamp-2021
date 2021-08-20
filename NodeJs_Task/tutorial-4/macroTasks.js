@@ -1,4 +1,4 @@
-const readStream=require('./readStream');
+const readStream = require('./readStream');
 
 function macroTasks() {
   console.log('Macro tasks start');
@@ -20,4 +20,4 @@ function macroTasks() {
   console.log('Macro tasks end...');
 }
 
-macroTasks()
+macroTasks();
