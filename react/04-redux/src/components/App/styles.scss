@@ -38,3 +38,8 @@ p:hover {
 a:visited {
   color: black;
 }
+.todoDiv, .todosDiv{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

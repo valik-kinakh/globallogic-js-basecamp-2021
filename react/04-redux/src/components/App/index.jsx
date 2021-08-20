@@ -22,8 +22,12 @@ function App() {
           <Users />
         </Route>
         <Route path='/todolist'>
-          <Todos />
-          <DisplayTodos />
+         <div className='todoDiv'>
+           <Todos />
+         </div>
+         <div className='todosDiv'>
+           <DisplayTodos/>
+         </div>
         </Route>
 
         <Route path='*'><NotFound /></Route>
