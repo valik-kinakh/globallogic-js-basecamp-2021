@@ -5,7 +5,7 @@ const staticFile=require('./staticFile');
 const {CONTENT_TYPES}=require('./contentTypes');
 
 const port=3030;
-http.createServer(((req, res) => {
+http.createServer((req, res) => {
     if (req.url.startsWith('/static/')) {
       staticFile(req, res);
     } else if (req.url.startsWith('/api')) {
@@ -20,4 +20,4 @@ http.createServer(((req, res) => {
             error: 'Not Found',
         }));
     }
-})).listen(port,()=>console.log(`Server started on: http://localhost:${port}`))
+}).listen(port,()=>console.log(`Server started on: http://localhost:${port}`))
