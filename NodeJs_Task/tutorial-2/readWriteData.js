@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-function read_writeData() {
+function readWriteData() {
 
   const print = (err, data, name) => {
     if (err) {
@@ -23,4 +23,4 @@ function writeData(data, name) {
   });
 }
 
-module.exports = read_writeData;
+module.exports = readWriteData;
