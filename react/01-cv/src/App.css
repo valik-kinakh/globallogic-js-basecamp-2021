@@ -11,7 +11,9 @@
 }
 
 .main {
-    max-width: 1000px;
+    min-width: 760px;
+    max-width: 1001px;
+    margin-right: 20%;
 }
 
 @media (max-width: 760px) {

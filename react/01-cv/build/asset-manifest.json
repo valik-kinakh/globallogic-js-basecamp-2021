@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/globallogic-js-basecamp-2021/react/01-cv/build/static/css/main.b6db47a8.chunk.css",
-    "main.js": "/globallogic-js-basecamp-2021/react/01-cv/build/static/js/main.3f6f9227.chunk.js",
-    "main.js.map": "/globallogic-js-basecamp-2021/react/01-cv/build/static/js/main.3f6f9227.chunk.js.map",
+    "main.css": "/globallogic-js-basecamp-2021/react/01-cv/build/static/css/main.cb46d7c6.chunk.css",
+    "main.js": "/globallogic-js-basecamp-2021/react/01-cv/build/static/js/main.b6aef589.chunk.js",
+    "main.js.map": "/globallogic-js-basecamp-2021/react/01-cv/build/static/js/main.b6aef589.chunk.js.map",
     "runtime-main.js": "/globallogic-js-basecamp-2021/react/01-cv/build/static/js/runtime-main.d24a803b.js",
     "runtime-main.js.map": "/globallogic-js-basecamp-2021/react/01-cv/build/static/js/runtime-main.d24a803b.js.map",
     "static/js/2.03f8f625.chunk.js": "/globallogic-js-basecamp-2021/react/01-cv/build/static/js/2.03f8f625.chunk.js",
@@ -10,14 +10,14 @@
     "static/js/3.69be1e10.chunk.js": "/globallogic-js-basecamp-2021/react/01-cv/build/static/js/3.69be1e10.chunk.js",
     "static/js/3.69be1e10.chunk.js.map": "/globallogic-js-basecamp-2021/react/01-cv/build/static/js/3.69be1e10.chunk.js.map",
     "index.html": "/globallogic-js-basecamp-2021/react/01-cv/build/index.html",
-    "static/css/main.b6db47a8.chunk.css.map": "/globallogic-js-basecamp-2021/react/01-cv/build/static/css/main.b6db47a8.chunk.css.map",
+    "static/css/main.cb46d7c6.chunk.css.map": "/globallogic-js-basecamp-2021/react/01-cv/build/static/css/main.cb46d7c6.chunk.css.map",
     "static/js/2.03f8f625.chunk.js.LICENSE.txt": "/globallogic-js-basecamp-2021/react/01-cv/build/static/js/2.03f8f625.chunk.js.LICENSE.txt",
     "static/media/myImg.748977ca.jpg": "/globallogic-js-basecamp-2021/react/01-cv/build/static/media/myImg.748977ca.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.d24a803b.js",
     "static/js/2.03f8f625.chunk.js",
-    "static/css/main.b6db47a8.chunk.css",
-    "static/js/main.3f6f9227.chunk.js"
+    "static/css/main.cb46d7c6.chunk.css",
+    "static/js/main.b6aef589.chunk.js"
   ]
 }
