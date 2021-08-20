@@ -1,28 +1,27 @@
-#rightBar>h1,#leftBar>p
-{
+.rightBar > h1, .leftBar > p {
     color: black;
 }
-#rightBar>#text>p
-{
+
+.rightBar > .text > p {
     padding-left: 0;
 }
-#rightBar>#text
-{
+
+.rightBar > .text {
     padding-right: 35%;
     line-height: 1.5;
 }
-#rightBar
-{
+
+.rightBar {
     padding-left: 6%;
     padding-right: 6%;
     padding-top: 3%;
 }
-#rightBar>p
-{
+
+.rightBar > p {
     text-align: justify;
     padding-left: 0;
 }
-#rightBar>h4
-{
+
+.rightBar > h4 {
     padding-left: 0
 }

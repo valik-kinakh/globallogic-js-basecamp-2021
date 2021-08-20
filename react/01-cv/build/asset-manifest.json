@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/globallogic-js-basecamp-2021/react/01-cv/build/static/css/main.91ff3d9d.chunk.css",
-    "main.js": "/globallogic-js-basecamp-2021/react/01-cv/build/static/js/main.08a2ef0a.chunk.js",
-    "main.js.map": "/globallogic-js-basecamp-2021/react/01-cv/build/static/js/main.08a2ef0a.chunk.js.map",
-    "runtime-main.js": "/globallogic-js-basecamp-2021/react/01-cv/build/static/js/runtime-main.e99d6942.js",
-    "runtime-main.js.map": "/globallogic-js-basecamp-2021/react/01-cv/build/static/js/runtime-main.e99d6942.js.map",
-    "static/js/2.de1e652f.chunk.js": "/globallogic-js-basecamp-2021/react/01-cv/build/static/js/2.de1e652f.chunk.js",
-    "static/js/2.de1e652f.chunk.js.map": "/globallogic-js-basecamp-2021/react/01-cv/build/static/js/2.de1e652f.chunk.js.map",
-    "static/js/3.2b32249a.chunk.js": "/globallogic-js-basecamp-2021/react/01-cv/build/static/js/3.2b32249a.chunk.js",
-    "static/js/3.2b32249a.chunk.js.map": "/globallogic-js-basecamp-2021/react/01-cv/build/static/js/3.2b32249a.chunk.js.map",
+    "main.css": "/globallogic-js-basecamp-2021/react/01-cv/build/static/css/main.b6db47a8.chunk.css",
+    "main.js": "/globallogic-js-basecamp-2021/react/01-cv/build/static/js/main.3f6f9227.chunk.js",
+    "main.js.map": "/globallogic-js-basecamp-2021/react/01-cv/build/static/js/main.3f6f9227.chunk.js.map",
+    "runtime-main.js": "/globallogic-js-basecamp-2021/react/01-cv/build/static/js/runtime-main.d24a803b.js",
+    "runtime-main.js.map": "/globallogic-js-basecamp-2021/react/01-cv/build/static/js/runtime-main.d24a803b.js.map",
+    "static/js/2.03f8f625.chunk.js": "/globallogic-js-basecamp-2021/react/01-cv/build/static/js/2.03f8f625.chunk.js",
+    "static/js/2.03f8f625.chunk.js.map": "/globallogic-js-basecamp-2021/react/01-cv/build/static/js/2.03f8f625.chunk.js.map",
+    "static/js/3.69be1e10.chunk.js": "/globallogic-js-basecamp-2021/react/01-cv/build/static/js/3.69be1e10.chunk.js",
+    "static/js/3.69be1e10.chunk.js.map": "/globallogic-js-basecamp-2021/react/01-cv/build/static/js/3.69be1e10.chunk.js.map",
     "index.html": "/globallogic-js-basecamp-2021/react/01-cv/build/index.html",
-    "static/css/main.91ff3d9d.chunk.css.map": "/globallogic-js-basecamp-2021/react/01-cv/build/static/css/main.91ff3d9d.chunk.css.map",
-    "static/js/2.de1e652f.chunk.js.LICENSE.txt": "/globallogic-js-basecamp-2021/react/01-cv/build/static/js/2.de1e652f.chunk.js.LICENSE.txt",
+    "static/css/main.b6db47a8.chunk.css.map": "/globallogic-js-basecamp-2021/react/01-cv/build/static/css/main.b6db47a8.chunk.css.map",
+    "static/js/2.03f8f625.chunk.js.LICENSE.txt": "/globallogic-js-basecamp-2021/react/01-cv/build/static/js/2.03f8f625.chunk.js.LICENSE.txt",
     "static/media/myImg.748977ca.jpg": "/globallogic-js-basecamp-2021/react/01-cv/build/static/media/myImg.748977ca.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.e99d6942.js",
-    "static/js/2.de1e652f.chunk.js",
-    "static/css/main.91ff3d9d.chunk.css",
-    "static/js/main.08a2ef0a.chunk.js"
+    "static/js/runtime-main.d24a803b.js",
+    "static/js/2.03f8f625.chunk.js",
+    "static/css/main.b6db47a8.chunk.css",
+    "static/js/main.3f6f9227.chunk.js"
   ]
 }

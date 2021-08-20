@@ -1,12 +1,19 @@
-.main>.left
-{
+.main > .left {
     float: left;
     width: 25%;
     background-color: #005b63;
     border-radius: 10px;
 }
-.main>.content
-{
+
+.main > .content {
     width: 75%;
     margin-left: 25%;
+}
+
+.main {
+    max-width: 1000px;
+}
+
+@media (max-width: 760px) {
+
 }

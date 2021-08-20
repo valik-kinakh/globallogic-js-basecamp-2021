@@ -1,42 +1,30 @@
-#myImage
-{
+.myImage {
     width: 100px;
     height: 150px;
     border-radius: 50%;
     border: 2px solid white;
 }
-#pImg
-{
+
+.pImg {
     margin-top: 5px;
     text-align: center;
     padding-left: 0;
 }
 
-p,h4
-{
+p, h4 {
     padding-left: 3%;
 }
-p
-{
+
+p {
     margin-top: 0;
     margin-bottom: 0;
 }
-h4
-{
+
+h4 {
     margin: 5px auto;
 }
-ul
-{
-    list-style-type: circle;
-    padding-left: 10%;
-}
-li
-{
-    margin-top: 5px;
-}
-#main
-{
+
+.mainL {
     padding-bottom: 50px;
     color: white;
-
 }
