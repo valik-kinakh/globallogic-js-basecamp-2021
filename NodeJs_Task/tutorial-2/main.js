@@ -1,13 +1,11 @@
 const http = require('http');
-const path = require('path');
-const fs = require('fs');
-const readData = require('./readData');
+const readWriteData = require('./readWriteData');
 const apple = require('./apple_stock');
 const tesla = require('./tesla_stock');
 const logger = require('./logger');
 const port = 3030;
 
-readData();
+readWriteData();
 http.createServer((req, res) => {
   res.statusCode = 200;
   let text;
