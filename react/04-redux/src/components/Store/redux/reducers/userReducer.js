@@ -1,115 +1,123 @@
-import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
-import {
-  CREATE_USER_SUCCESS, DELETE_USER_SUCCESS,
-  EDIT_USER_SUCCESS,
-  FETCH_USER_SUCCESS,
-  FETCH_USERS_SUCCESS
-} from '../../../Users/UsersTable/types';
-import api from '../../../../api/userApi';
+import {createAsyncThunk, createSlice} from "@reduxjs/toolkit";
+import api from "../../../../api/userApi";
+
+export const fetchUsers = createAsyncThunk("users/fetch", async () => {
+  const payload = await api.getUsers();
+  return payload;
+});
+
+export const getUser = createAsyncThunk("users/get", async (id) => {
+  const payload = await api.getUser(id);
+  return payload;
+});
+
+export const createUser = createAsyncThunk("users/create", async (user) => {
+  const payload = await api.createUser(user);
+  return payload;
+});
+
+export const updateUser = createAsyncThunk("users/update", async (user) => {
+  const payload = await api.editUser(user);
+  return payload;
+});
+
+export const fetchRoles = createAsyncThunk("roles/fetch", async () => {
+  const payload = await api.getRoles();
+  return payload;
+});
+
+export const cloneUser = createAsyncThunk("users/clone", async (user) => {
+  const payload = await api.editUser(user);
+  return payload;
+});
+
+export const removeUser = createAsyncThunk("users/remove", async (user) => {
+  const payload = await api.deleteUser(user);
+  return payload;
+});
 
 const initialState = {
   list: [],
-  user:{},
-  isFetched: false,
-  loading:'fin'
+  usersFetched: false,
+  roles: [],
+  rolesFetched: false,
 };
 
-export const getUsers = createAsyncThunk(FETCH_USERS_SUCCESS, async () => {
-  try {
-    const result=await api.getUsers()
-    return result;
-  } catch (error) {
-    window.alert(`Failed to fetch users: ${error.message}`);
-  }
-
-});
-export const getUser = createAsyncThunk(FETCH_USER_SUCCESS, async (id) => {
-  try {
-    const result=await api.getUser(id);
-    return result;
-  } catch (error) {
-    window.alert(`Failed to fetch users: ${error.message}`);
-  }
-});
-export const createUser = createAsyncThunk(CREATE_USER_SUCCESS, async (user) => {
-  try {
-    const result=await api.createUser(user);
-    return result;
-  } catch (error) {
-    window.alert(`Failed to fetch users: ${error.message}`);
-  }
-});
-export const editUser=  createAsyncThunk(EDIT_USER_SUCCESS,async (user)=>{
-  try{
-    const result=await api.editUser(user)
-    return result;
-  }catch (error)
-  {
-    window.alert(`Failed to fetch users: ${error.message}`);
-  }
-})
-export const deleteUser=  createAsyncThunk(DELETE_USER_SUCCESS, async (user)=>{
-  try{
-    const result=await api.deleteUser(user);
-    return result;
-  }catch (error)
-  {
-    window.alert(`Failed to fetch users: ${error.message}`);
-  }
-})
-
-const userReducer = createSlice({
-  name: 'users',
+const usersSlice = createSlice({
+  name: "users",
   initialState,
   reducers: {},
-  extraReducers: {
-    [getUsers.pending]:(state,action)=>{
-      state.isFetched=false;
-      state.loading='pending';
-    },
-    [getUsers.fulfilled]:(state,action)=>{
-      state.list=action.payload;
-      state.isFetched=true;
-      state.loading='fin';
-    },
-    [getUser.pending]:(state,action)=>{
-      state.isFetched=false;
-      state.loading='pending';
-    },
-    [getUser.fulfilled]:(state,action)=>{
-      state.user=action.payload;
-      state.isFetched=true;
-      state.loading='fin';
-    },
-    [createUser.pending]:(state,action)=>{
-      state.isFetched=false;
-      state.loading='pending';
-    },
-    [createUser.fulfilled]:(state,action)=>{
-      state.list=action.payload;
-      state.isFetched=true;
-      state.loading='fin';
-    },
-    [editUser.pending]:(state,action)=>{
-      state.isFetched=false;
-      state.loading='pending';
-    },
-    [editUser.fulfilled]:(state,action)=>{
-      state.user=action.payload;
-      state.isFetched=true;
-      state.loading='fin';
-    },
-    [deleteUser.pending]:(state,action)=>{
-      state.isFetched=false;
-      state.loading='pending';
-    },
-    [deleteUser.fulfilled]:(state,action)=>{
-      state.list=action.payload;
-      state.isFetched=true;
-      state.loading='fin';
-    }
-
-  }
+  extraReducers: (builder) => {
+    builder
+        .addCase(fetchUsers.pending, (state, action) => {
+          state.usersFetched = false;
+        })
+        .addCase(fetchUsers.fulfilled, (state, action) => {
+          state.usersFetched = true;
+          state.list = [...action.payload];
+        })
+        .addCase(fetchUsers.rejected, (state, action) => {
+          state.usersFetched = false;
+          window.alert(`Failed to fetch users`);
+        })
+        .addCase(fetchRoles.pending, (state, action) => {
+          state.rolesFetched = false;
+        })
+        .addCase(fetchRoles.fulfilled, (state, action) => {
+          state.rolesFetched = true;
+          state.roles = state.roles.concat(action.payload);
+        })
+        .addCase(fetchRoles.rejected, (state, action) => {
+          state.rolesFetched = false;
+          window.alert(`Failed to fetch roles`);
+        })
+        .addCase(createUser.pending, (state, action) => {
+          state.usersFetched = false;
+        })
+        .addCase(createUser.fulfilled, (state, action) => {
+          state.usersFetched = true;
+          state.list = state.list.concat(action.payload);
+        })
+        .addCase(createUser.rejected, (state, action) => {
+          window.alert(`Failed to add user`);
+        })
+        .addCase(updateUser.pending, (state, action) => {
+          state.usersFetched = false;
+        })
+        .addCase(updateUser.fulfilled, (state, action) => {
+          state.usersFetched = true;
+          state.list = state.list.map((user) =>
+              user.id === action.payload.id ? action.payload : user
+          );
+        })
+        .addCase(updateUser.rejected, (state, action) => {
+          window.alert(`Failed to add user`);
+        })
+        .addCase(cloneUser.pending, (state, action) => {
+          state.usersFetched = false;
+        })
+        .addCase(cloneUser.fulfilled, (state, action) => {
+          state.usersFetched = true;
+          state.list = state.list.concat(action.payload);
+        })
+        .addCase(cloneUser.rejected, (state, action) => {
+          window.alert(`Failed to clone user`);
+        })
+        .addCase(removeUser.pending, (state, action) => {
+          state.usersFetched = false;
+        })
+        .addCase(removeUser.fulfilled, (state, action) => {
+          state.usersFetched = true;
+          state.list = state.list.filter(
+              (user) => user.id !== action.payload[0].id
+          );
+        })
+        .addCase(removeUser.rejected, (state, action) => {
+          window.alert(`Failed to remove user`);
+        });
+  },
 });
 
-export default userReducer;
+export const { deleteUser, editUser } = usersSlice.actions;
+
+export default usersSlice.reducer;

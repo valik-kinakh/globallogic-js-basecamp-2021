@@ -1,33 +1,50 @@
 import { useEffect, useState } from 'react';
 import { useParams, useHistory } from 'react-router-dom';
-
-import userApi from '../../../api/userApi';
+import {
+  getUser,
+  fetchRoles,
+  createUser,
+  updateUser,
+  fetchUsers,
+  removeUser
+} from "../../Store/redux/reducers/userReducer";
 import { MODE } from '../../../constants';
 import { ID } from '../constants';
 import FormContainer from './FormContainer';
 import { getInitialValues, getRequestPayload } from './converter';
+import {useDispatch, useSelector} from "react-redux";
 
-function UserForm({ users, setUsers }) {
+function UserForm() {
   const { mode, id } = useParams();
   const history = useHistory();
-
-  const user = users.find(user => user.id === Number(id));
+  const dispatch = useDispatch();
+  const users = useSelector((state) => state.users.list);
+  const status = useSelector((state) => state.users.usersFetched);
+  const user = users.find((user) => user.id === Number(id));
+  const roles = useSelector((state) => state.users.roles);
+  const rolesFetched = useSelector((state) => state.users.rolesFetched);
 
   useEffect(() => {
     if (mode === MODE.VIEW || mode === MODE.EDIT) {
       if (!user) {
-        userApi
-          .getUser(Number(id))
-          .then(user => setUsers(prevUsers => [...prevUsers, user]))
-          .catch(err => window.alert(err.message));
+       dispatch(getUser(id));
       }
     }
-  }, [id, mode, user, setUsers]);
+    if (!status)
+    {
+      dispatch(fetchUsers());
+    }
+  }, [id, mode, user, dispatch,status]);
 
-  const [roles, setRoles] = useState([]);
   useEffect(() => {
-    userApi.getRoles().then(setRoles);
-  }, [setUsers]);
+   if (mode)
+   {
+     if (!rolesFetched)
+     {
+       dispatch(fetchRoles());
+     }
+   }
+  }, [rolesFetched,dispatch,mode]);
 
   const handleSubmit = async values => {
     try {
@@ -35,16 +52,16 @@ function UserForm({ users, setUsers }) {
 
       switch (mode) {
         case MODE.CREATE:
-          await userApi.createUser(payload);
+          await dispatch(createUser(payload));
           break;
         case MODE.EDIT:
-          await userApi.editUser(payload);
+          await dispatch(updateUser(payload));
           break;
         case MODE.CLONE:
-          await userApi.createUser(payload);
+          await dispatch(createUser(payload));
           break;
         case MODE.DELETE:
-          await userApi.deleteUser(payload);
+          await dispatch(removeUser(payload));
           break;
         default:
           console.error(`Failed to execute this request for ${mode} mode`);
