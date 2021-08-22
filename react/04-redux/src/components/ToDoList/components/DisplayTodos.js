@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { addTodos, removeTodos, completeTodos } from '../../Store/redux/reducers/reducerTodo';
 import TodoItem from './TodoItem';
-import '../main.css'
+import '../main.css';
 
 const mapStateToProps = (state) => {
   return {

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { connect } from 'react-redux';
 import { addTodos } from '../../Store/redux/reducers/reducerTodo';
 import { nanoid } from '@reduxjs/toolkit';
-import '../main.css'
+import '../main.css';
 
 const mapStateToProps = state => {
   return {
@@ -43,7 +43,7 @@ const Todos = (props) => {
              value={todo}
              onChange={e => handleTodo(e)}
       />
-      <br/>
+      <br />
       <button className='addBtn' onClick={() => add()}>Add</button>
 
     </div>

@@ -7,12 +7,12 @@ import {
   updateUser,
   fetchUsers,
   removeUser
-} from "../../Store/redux/reducers/userReducer";
+} from '../../Store/redux/reducers/userReducer';
 import { MODE } from '../../../constants';
 import { ID } from '../constants';
 import FormContainer from './FormContainer';
 import { getInitialValues, getRequestPayload } from './converter';
-import {useDispatch, useSelector} from "react-redux";
+import { useDispatch, useSelector } from 'react-redux';
 
 function UserForm() {
   const { mode, id } = useParams();
@@ -27,24 +27,21 @@ function UserForm() {
   useEffect(() => {
     if (mode === MODE.VIEW || mode === MODE.EDIT) {
       if (!user) {
-       dispatch(getUser(id));
+        dispatch(getUser(id));
       }
     }
-    if (!status)
-    {
+    if (!status) {
       dispatch(fetchUsers());
     }
-  }, [id, mode, user, dispatch,status]);
+  }, [id, mode, user, dispatch, status]);
 
   useEffect(() => {
-   if (mode)
-   {
-     if (!rolesFetched)
-     {
-       dispatch(fetchRoles());
-     }
-   }
-  }, [rolesFetched,dispatch,mode]);
+    if (mode) {
+      if (!rolesFetched) {
+        dispatch(fetchRoles());
+      }
+    }
+  }, [rolesFetched, dispatch, mode]);
 
   const handleSubmit = async values => {
     try {

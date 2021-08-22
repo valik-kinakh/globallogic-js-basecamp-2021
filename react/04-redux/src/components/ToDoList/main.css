@@ -1,4 +1,4 @@
-.addBtn, .optionBtn{
+.addBtn, .optionBtn {
     width: 140px;
     height: 45px;
     font-family: 'Roboto', sans-serif;
@@ -16,21 +16,22 @@
     outline: none;
     margin-top: 20px;
 }
-.addBtn:hover, .optionBtn:hover
-{
+
+.addBtn:hover, .optionBtn:hover {
     background-color: #2EE59D;
     box-shadow: 0 15px 20px rgba(46, 229, 157, 0.4);
     color: #fff;
     transform: translateY(-7px);
 }
-.input-todo{
+
+.input-todo {
     border-radius: 5px;
     width: 13vw;
     height: 4vh;
     font-size: 15px;
     margin-top: 20px;
 }
-.todoList
-{
+
+.todoList {
     list-style-type: none;
 }

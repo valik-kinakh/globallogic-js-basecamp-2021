@@ -1,12 +1,12 @@
 import { useEffect } from 'react';
 import { useRouteMatch, Link } from 'react-router-dom';
-import {useSelector,useDispatch} from "react-redux";
+import { useSelector, useDispatch } from 'react-redux';
 import userApi from '../../../api/userApi';
 import { MODE } from '../../../constants';
 import { ID, USERNAME, ROLE, TIMESTAMP, AGE } from '../constants';
 import Actions from './Actions';
 import './index.scss';
-import {fetchUsers} from "../../Store/redux/reducers/userReducer";
+import { fetchUsers } from '../../Store/redux/reducers/userReducer';
 
 function UsersTable() {
   const { url } = useRouteMatch();
@@ -18,14 +18,14 @@ function UsersTable() {
     if (!status) {
       dispatch(fetchUsers());
     }
-  }, [status,dispatch]);
+  }, [status, dispatch]);
 
   let displayInfo;
 
-  if (!status){
-    displayInfo=<p>Loading...</p>
-  }else if (status){
-    displayInfo=<div>
+  if (!status) {
+    displayInfo = <p>Loading...</p>;
+  } else if (status) {
+    displayInfo = <div>
       <Link to={`${url}/user/${MODE.CREATE}`}><p className='createBtn'>Create User</p></Link>
 
       <table>
@@ -41,20 +41,20 @@ function UsersTable() {
         </thead>
         <tbody>
         {users.map(user => (
-            <tr key={user[ID]}>
-              <td>{user[ID]}</td>
-              <td>{user[USERNAME]}</td>
-              <td>{user[AGE]}</td>
-              <td>{user[ROLE]}</td>
-              <td>{user[TIMESTAMP]}</td>
-              <td>
-                <Actions id={user[ID]} />
-              </td>
-            </tr>
+          <tr key={user[ID]}>
+            <td>{user[ID]}</td>
+            <td>{user[USERNAME]}</td>
+            <td>{user[AGE]}</td>
+            <td>{user[ROLE]}</td>
+            <td>{user[TIMESTAMP]}</td>
+            <td>
+              <Actions id={user[ID]} />
+            </td>
+          </tr>
         ))}
         </tbody>
       </table>
-    </div>
+    </div>;
   }
 
   return (

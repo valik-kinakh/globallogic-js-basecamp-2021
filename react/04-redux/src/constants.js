@@ -4,5 +4,4 @@ export const MODE = {
   EDIT: 'edit',
   CLONE: 'clone',
   DELETE: 'delete'
-
 };
