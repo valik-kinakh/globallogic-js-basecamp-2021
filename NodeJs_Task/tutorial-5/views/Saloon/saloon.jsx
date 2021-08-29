@@ -1,4 +1,4 @@
-import '../car.css';
+import '../carStyles.css';
 
 export default function Saloon({ cars }) {
   return (
