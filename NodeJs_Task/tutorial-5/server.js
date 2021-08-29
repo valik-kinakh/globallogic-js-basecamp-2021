@@ -72,6 +72,9 @@ const pages = ['Saloon', 'Coupe', 'SUV'];
         });
         break;
       default:
+        app.get('*',(req, res) => {
+          res.render('NotFound/notFound');
+        })
         break;
     }
     res.json({ message: 'Successfuly created' });
@@ -122,13 +125,20 @@ const pages = ['Saloon', 'Coupe', 'SUV'];
         });
         break;
       default:
+        app.get('*',(req, res) => {
+          res.render('NotFound/notFound');
+        });
         break;
     }
   });
 
+  app.get('*',(req, res) => {
+    res.render('NotFound/notFound');
+  });
 
-  app.listen(8080, () => {
-    console.log('Working on http://localhost:8080');
+
+  app.listen(8090, () => {
+    console.log('Working on http://localhost:8090');
   });
 })();
 
