@@ -1,4 +1,4 @@
-const readStream = require('./readStream');
+const readStream = require('./readWriteStream');
 
 function macroTasks() {
   console.log('Macro tasks start');

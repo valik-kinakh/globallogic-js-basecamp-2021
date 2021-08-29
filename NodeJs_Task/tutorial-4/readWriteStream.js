@@ -3,7 +3,7 @@ const path = require('path');
 const zlib = require('zlib');
 const zip = zlib.createGzip();
 
-function readStream() {
+function readWriteStream() {
   const filePath = path.join(__dirname, 'readText.txt');
   const outPath = path.join(__dirname, 'writeText.txt');
   const archivePath = path.join(__dirname, 'archive.gz');
@@ -32,4 +32,4 @@ function readStream() {
   }, 0);
 }
 
-module.exports = readStream;
+module.exports = readWriteStream;
