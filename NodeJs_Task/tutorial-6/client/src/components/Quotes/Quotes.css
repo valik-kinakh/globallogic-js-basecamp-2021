@@ -1,0 +1,28 @@
+.drone-list h4{
+    text-align: center;
+    font-family: "Avenir Next", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    letter-spacing: 0.05em;
+    font-size: 28px;
+}
+.drone-list{
+    text-align: center;
+}
+.drone-list_box{
+    max-width: 400px;
+    margin: 20px;
+    display: inline-block;
+}
+.drone-list_box img{
+    width: 100%;
+    border: 10px solid #69e069;
+    border-radius: 20px;
+    transition: transform 0.8s;
+    height: 35vh;
+}
+.drone-list_box img:hover{
+    cursor: pointer;
+    box-shadow: 3px 2px 17px 7px #a0c4c1;
+    transform: scale(1.3);
+}

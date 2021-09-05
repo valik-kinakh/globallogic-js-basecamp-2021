@@ -1,0 +1,20 @@
+*{
+    text-decoration: none;
+}
+.nav{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+.nav-item{
+   font-size: 24px;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+.nav-item:hover{
+  background-color: aquamarine;
+    transition: 0.5s;
+}
+p{
+    color: black;
+}
