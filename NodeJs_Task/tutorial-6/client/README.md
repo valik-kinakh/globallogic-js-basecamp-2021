@@ -1,4 +1,4 @@
-[Demo](hhttps://valik-kinakh.github.io/globallogic-js-basecamp-2021/NodeJs_Task/tutorial-6/client/build)
+[Demo](https://valik-kinakh.github.io/globallogic-js-basecamp-2021/NodeJs_Task/tutorial-6/client/build)
 
 # Getting Started with Create React App
 
