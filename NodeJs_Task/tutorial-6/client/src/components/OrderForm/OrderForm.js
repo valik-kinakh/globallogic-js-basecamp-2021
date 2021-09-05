@@ -3,7 +3,6 @@ import { useContext } from 'react';
 
 import OrderContext from '../../context/orderContext';
 import Nav from '../Nav/Nav';
-import Quotes from '../Quotes/Quotes';
 
 import './OrderForm.css'
 

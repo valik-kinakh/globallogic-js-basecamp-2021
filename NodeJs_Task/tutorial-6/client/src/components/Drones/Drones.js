@@ -1,7 +1,6 @@
 import { useContext, useState, useEffect } from 'react';
 import OrderContext from '../../context/orderContext';
 import Nav from '../Nav/Nav';
-import Quotes from '../Quotes/Quotes';
 
 import autelImg from '../../images/autel_evo_2.jpg';
 import djiAirImg from '../../images/dji_air_2.jpg';
