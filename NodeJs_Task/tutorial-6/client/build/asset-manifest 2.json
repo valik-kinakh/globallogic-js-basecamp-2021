@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/globallogic-js-basecamp-2021/NodeJs-Task/tutorial-6/client/build/static/css/main.faffba60.chunk.css",
+    "main.js": "/globallogic-js-basecamp-2021/NodeJs-Task/tutorial-6/client/build/static/js/main.20d839ac.chunk.js",
+    "main.js.map": "/globallogic-js-basecamp-2021/NodeJs-Task/tutorial-6/client/build/static/js/main.20d839ac.chunk.js.map",
+    "runtime-main.js": "/globallogic-js-basecamp-2021/NodeJs-Task/tutorial-6/client/build/static/js/runtime-main.564c8cf6.js",
+    "runtime-main.js.map": "/globallogic-js-basecamp-2021/NodeJs-Task/tutorial-6/client/build/static/js/runtime-main.564c8cf6.js.map",
+    "static/js/2.1473b06c.chunk.js": "/globallogic-js-basecamp-2021/NodeJs-Task/tutorial-6/client/build/static/js/2.1473b06c.chunk.js",
+    "static/js/2.1473b06c.chunk.js.map": "/globallogic-js-basecamp-2021/NodeJs-Task/tutorial-6/client/build/static/js/2.1473b06c.chunk.js.map",
+    "static/js/3.70a57ff4.chunk.js": "/globallogic-js-basecamp-2021/NodeJs-Task/tutorial-6/client/build/static/js/3.70a57ff4.chunk.js",
+    "static/js/3.70a57ff4.chunk.js.map": "/globallogic-js-basecamp-2021/NodeJs-Task/tutorial-6/client/build/static/js/3.70a57ff4.chunk.js.map",
+    "index.html": "/globallogic-js-basecamp-2021/NodeJs-Task/tutorial-6/client/build/index.html",
+    "static/css/main.faffba60.chunk.css.map": "/globallogic-js-basecamp-2021/NodeJs-Task/tutorial-6/client/build/static/css/main.faffba60.chunk.css.map",
+    "static/js/2.1473b06c.chunk.js.LICENSE.txt": "/globallogic-js-basecamp-2021/NodeJs-Task/tutorial-6/client/build/static/js/2.1473b06c.chunk.js.LICENSE.txt",
+    "static/media/autel_evo_2.9e41d03b.jpg": "/globallogic-js-basecamp-2021/NodeJs-Task/tutorial-6/client/build/static/media/autel_evo_2.9e41d03b.jpg",
+    "static/media/dji_air_2.e2a513bb.jpg": "/globallogic-js-basecamp-2021/NodeJs-Task/tutorial-6/client/build/static/media/dji_air_2.e2a513bb.jpg",
+    "static/media/dji_mini_2.1476d265.jpg": "/globallogic-js-basecamp-2021/NodeJs-Task/tutorial-6/client/build/static/media/dji_mini_2.1476d265.jpg",
+    "static/media/dji_phantom_pro.29ee040b.jpg": "/globallogic-js-basecamp-2021/NodeJs-Task/tutorial-6/client/build/static/media/dji_phantom_pro.29ee040b.jpg",
+    "static/media/hubsan_zino_pro.e1dd01ff.jpg": "/globallogic-js-basecamp-2021/NodeJs-Task/tutorial-6/client/build/static/media/hubsan_zino_pro.e1dd01ff.jpg",
+    "static/media/xiaomi_fimi.39daa98c.jpg": "/globallogic-js-basecamp-2021/NodeJs-Task/tutorial-6/client/build/static/media/xiaomi_fimi.39daa98c.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.564c8cf6.js",
+    "static/js/2.1473b06c.chunk.js",
+    "static/css/main.faffba60.chunk.css",
+    "static/js/main.20d839ac.chunk.js"
+  ]
+}
